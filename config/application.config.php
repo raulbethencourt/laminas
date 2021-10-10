@@ -1,6 +1,14 @@
 <?php
 
+
 /**
+ *     ______           ____          __                    
+ *    / ____/___ ______/ __ \____ _   \ \  ____ _____  ____ 
+ *   / /   / __ `/ ___/ /_/ / __ `/____\ \/ __ `/ __ \/ __ \
+ *  / /___/ /_/ / /  / ____/ /_/ /_____/ / /_/ / /_/ / /_/ /
+ *  \____/\__,_/_/  /_/    \__,_/     /_/\__,_/ .___/ .___/ 
+ *                                           /_/   /_/      
+ * 
  * If you need an environment-specific system or application configuration,
  * there is an example in the documentation
  *
