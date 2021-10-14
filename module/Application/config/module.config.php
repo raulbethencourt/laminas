@@ -14,7 +14,7 @@ return [
             'home' => [
                 'type'    => Literal::class,
                 'options' => [
-                    'route'    => '/',
+                    'route'    => '/album',
                     'defaults' => [
                         'controller' => Controller\IndexController::class,
                         'action'     => 'index',

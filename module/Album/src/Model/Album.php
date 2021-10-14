@@ -10,6 +10,7 @@ use Laminas\InputFilter\InputFilter;
 use Laminas\InputFilter\InputFilterInterface;
 use Laminas\InputFilter\InputFilterAwareInterface;
 use Laminas\Validator\StringLength;
+use Symfony\Component\VarDumper\Exception\ThrowingCasterException;
 
 class Album implements InputFilterAwareInterface
 {
@@ -23,6 +24,15 @@ class Album implements InputFilterAwareInterface
         $this->id     = !empty($data['id']) ? $data['id'] : null;
         $this->artist = !empty($data['artist']) ? $data['artist'] : null;
         $this->title  = !empty($data['title']) ? $data['title'] : null;
+    }
+
+    public function getArrayCopy()
+    {
+        return [
+            'id'     => $this->id,
+            'artist' => $this->artist,
+            'title'  => $this->title,
+        ];
     }
 
     public function setInputFilter(InputFilterInterface $inputFilter)
