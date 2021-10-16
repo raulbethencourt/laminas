@@ -6,6 +6,7 @@ namespace Application;
 
 use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Segment;
+use Album\Controller\AlbumController;
 use Laminas\ServiceManager\Factory\InvokableFactory;
 
 return [
@@ -16,7 +17,7 @@ return [
                 'options' => [
                     'route'    => '/',
                     'defaults' => [
-                        'controller' => Controller\IndexController::class,
+                        'controller' => AlbumController::class,
                         'action'     => 'index',
                     ],
                 ],
