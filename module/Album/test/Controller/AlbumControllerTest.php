@@ -2,13 +2,13 @@
 
 namespace AlbumTest\Controller;
 
-use Album\Controller\AlbumController;
 use Album\Model\Album;
-use Laminas\Stdlib\ArrayUtils;
-use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
-use Album\Model\AlbumTable;
-use Laminas\ServiceManager\ServiceManager;
 use Prophecy\Argument;
+use Album\Model\AlbumTable;
+use Laminas\Stdlib\ArrayUtils;
+use Album\Controller\AlbumController;
+use Laminas\ServiceManager\ServiceManager;
+use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class AlbumControllerTest extends AbstractHttpControllerTestCase
 {
