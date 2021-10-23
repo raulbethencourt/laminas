@@ -18,6 +18,7 @@ $this->headTitle($title);
         <tr>
             <td><?= $this->escapeHtml($album->title) ?></td>
             <td><?= $this->escapeHtml($album->artist) ?></td>
+            <td><?= substr('12345678', 0, 5) ?></td>
             <td>
                 <a href="<?= $this->url('album', ['action' => 'edit', 'id' => $album->id]) ?>">Edit</a>
                 <a href="<?= $this->url('album', ['action' => 'delete', 'id' => $album->id]) ?>">Delete</a>
