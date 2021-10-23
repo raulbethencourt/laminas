@@ -49,6 +49,14 @@ class AlbumControllerTest extends AbstractHttpControllerTestCase
         $this->assertRedirectTo('/album');
     }
 
+    // TODO test the paths
+    public function testEditActionRedirectAfterValidPost()
+    {
+    }
+
+    public function testDeleteActionRedirectAfterValidPost()
+    }
+
     public function testIndexActonCanBeAccessed()
     {
         $this->albumTable->fetchAll()->willReturn([]);
