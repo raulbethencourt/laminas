@@ -6,6 +6,8 @@
  * This should be an array of module namespaces used in the application.
  */
 return [
+    'Laminas\Mvc\I18n',
+    'Laminas\Paginator',
     'Laminas\Navigation',
     'Laminas\Form',
     'Laminas\I18n',
